@@ -74,9 +74,9 @@ export default function Login(params) {
 			}
 		});
 	};
-	//防抖
+	// 防抖
 	const handleShakeFn = shakeFn(handleLogin, 300);
-	//节流
+	// 节流
 	const handleThrottle = throttle(handleLogin, 1000);
 	return (
 		<Styled>
