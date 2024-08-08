@@ -30,3 +30,13 @@ export async function getAssetsInfoApi() {
 		url: '/game/user-assets/get-assets-info',
 	});
 }
+/**
+ *@description 俱乐部列表
+ */
+export async function getClubListApi(params) {
+	return formatRequest({
+		method: 'get',
+		url: '/club/list',
+		data: params,
+	});
+}

@@ -96,7 +96,6 @@ const Styled = styled.div`
 	height: 100%;
 	flex: 1;
 	position: relative;
-	background-color: #111;
 `;
 const Floor = styled.div`
 	height: 5rem;
