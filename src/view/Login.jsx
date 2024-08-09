@@ -9,10 +9,10 @@ import {
 	getUserInfoApi,
 	getAssetsInfoApi,
 } from '../services/account.js';
-import { shakeFn, throttle } from '../utils/public.js';
+import { throttle } from '../utils/public.js';
 import { setCookieValue, setStorage } from '../utils/StorageFn.js';
 import { useNavigate } from 'react-router-dom';
-export default function Login(params) {
+export default function Login() {
 	const emailValueRef = useRef('');
 	const passwordValueRef = useRef('');
 	const [emailError, setEmailError] = useState(false);
@@ -74,8 +74,6 @@ export default function Login(params) {
 			}
 		});
 	};
-	// 防抖
-	const handleShakeFn = shakeFn(handleLogin, 300);
 	// 节流
 	const handleThrottle = throttle(handleLogin, 1000);
 	return (
