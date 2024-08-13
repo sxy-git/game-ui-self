@@ -5,7 +5,7 @@ import club_grade_sun from '@/assets/club/club_grade_sun.webp';
 import club_grade_moon from '@/assets/club/club_grade_moon.webp';
 import club_grade_star from '@/assets/club/club_grade_star.webp';
 
-export default function ClubGrade({ grade = 5 }) {
+export default function ClubGrade({ grade }) {
 	const [star, setStar] = useState(0);
 	const [moon, setMoon] = useState(0);
 	const [sun, setSun] = useState(0);
